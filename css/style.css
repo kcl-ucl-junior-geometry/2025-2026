@@ -12,12 +12,14 @@ body {
 /* 链接：深蓝 → 青绿 hover */
 a {
     color: #1d6c8b;
-    text-decoration: underline;  /* 永远带下划线 */
-    transition: color 0.3s ease;
+    text-decoration: none;              /* 去掉默认下划线 */
+    border-bottom: 1px solid transparent; /* 用边框代替 */
+    transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 a:hover {
     color: #58b79d;
+    border-bottom: 1px solid #58b79d;   /* hover 时才出现下划线 */
 }
 
 a:active {
