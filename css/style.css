@@ -9,6 +9,22 @@ body {
     background-attachment: fixed; /* 固定渐变背景，像艺术画布 */
 }
 
+.seminar-links a {
+    display: inline-block;
+    margin: 0.3em 0.4em;
+    padding: 0.4em 0.8em;
+    background: #1d6c8b;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    font-size: 0.95rem;
+}
+.seminar-links a:hover {
+    background: #58b79d;
+}
+
+
 /* 链接：深蓝 → 青绿 hover */
 a {
     color: #1d6c8b;
