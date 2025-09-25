@@ -12,18 +12,19 @@ body {
 /* 链接：深蓝 → 青绿 hover */
 a {
     color: #1d6c8b;
-    text-decoration: none;              /* 去掉默认下划线 */
-    border-bottom: 1px solid transparent; /* 用边框代替 */
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    text-decoration: none;  
+    border-bottom: 1px solid rgba(29,108,139,0.2); /* 默认淡淡的下划线 */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
 }
 
 a:hover {
     color: #58b79d;
-    border-bottom: 1px solid #58b79d;   /* hover 时才出现下划线 */
+    border-bottom-color: #58b79d; /* hover 时变成明显的青绿色 */
 }
 
 a:active {
     color: #f6e781;
+    border-bottom-color: #f6e781; /* 点击时金黄色 */
 }
 
 
