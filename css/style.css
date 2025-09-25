@@ -12,19 +12,18 @@ body {
 /* 链接：深蓝 → 青绿 hover */
 a {
     color: #1d6c8b;
-    text-decoration:  underline;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
-    border-bottom: 1px solid transparent;
+    text-decoration: underline;  /* 永远带下划线 */
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: #58b79d;
-    border-bottom: 1px solid #58b79d;
 }
 
 a:active {
     color: #f6e781;
 }
+
 
 /* 顶部导航栏 */
 .header-bar {
