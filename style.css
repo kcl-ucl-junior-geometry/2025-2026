@@ -1,0 +1,145 @@
+/* 全局 */
+body {
+    margin: 0;
+    color: #1d6c8b; /* 深蓝文字 */
+    background: linear-gradient(135deg, #f6e781 0%, #b7d77e 35%, #58b79d 65%, #1d6c8b 100%);
+    font-size: 1.1rem;
+    font-family: "Helvetica Neue", "Segoe UI", "Georgia", serif;
+
+    background-attachment: fixed; /* 固定渐变背景，像艺术画布 */
+}
+
+/* 链接：深蓝 → 青绿 hover */
+a {
+    color: #1d6c8b;
+    text-decoration: none;  
+    border-bottom: 1px solid rgba(29,108,139,0.2); /* 默认淡淡的下划线 */
+    transition: color 0.3s ease, border-bottom-color 0.3s ease;
+}
+
+a:hover {
+    color: #58b79d;
+    border-bottom-color: #58b79d; /* hover 时变成明显的青绿色 */
+}
+
+a:active {
+    color: #f6e781;
+    border-bottom-color: #f6e781; /* 点击时金黄色 */
+}
+
+
+/* 顶部导航栏 */
+.header-bar {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 2px solid #1d6c8b;
+    padding: 0.8em 1em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+
+    display: flex;
+    flex-direction: column;  /* 纵向排列 */
+    align-items: center;     /* 居中 */
+}
+
+
+.header-bar-left h1 {
+    font-family: "Garamond", "Georgia", serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0.5em 0;
+    background: linear-gradient(90deg, #1d6c8b, #58b79d, #b7d77e, #f6e781);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* 顶部菜单 */
+.header-bar-right > ul {
+    text-align: center;
+    padding-left: 0;
+    margin: 1em;
+}
+
+.header-bar-right > ul > li {
+    display: inline-block;
+}
+
+.header-bar-right > ul > li > a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.5em 1em;
+    color: #1d6c8b;
+    transition: all 0.3s ease;
+}
+
+.header-bar-right > ul > li > a:hover {
+    color: #58b79d;
+    transform: translateY(-2px);
+}
+
+.header-bar-right > ul > li > a:active {
+    color: #f6e781;
+}
+
+/* 主体内容 */
+.main-content {
+    padding: 2em;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    max-width: 1000px;
+    margin: 2em auto;
+}
+
+.main-content h2, .main-content h3 {
+    color: #1d6c8b;
+    font-family: "Garamond", "Georgia", serif;
+}
+
+/* 日程列表 */
+.schedule-list {
+    padding: 0;
+}
+
+.schedule-list li {
+    list-style: none;
+    background: linear-gradient(135deg, #f6e781cc, #b7d77ecc);
+    border: 1px solid #1d6c8b;
+    border-radius: 10px;
+    padding: 1.5em;
+    margin: 1.5em 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.schedule-list li:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.schedule-info {
+    margin-bottom: 0.6em;
+    text-align: center;
+    font-weight: bold;
+    color: #1d6c8b;
+}
+
+/* 页脚 */
+footer {
+    background: linear-gradient(90deg, #1d6c8b, #58b79d);
+    color: #f6e781;
+    border-top: 2px solid #b7d77e;
+    padding: 1em;
+    margin-top: 2em;
+    text-align: center;
+}
+
+footer a {
+    color: #f6e781;
+}
+
+footer a:hover {
+    color: #b7d77e;
+}
